@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/datascience-singleuser
 USER jovyan
 RUN conda install -y -c cpcloud npm=1.4.12
 RUN git clone -b layout https://github.com/SylvainCorlay/bqplot.git && \
